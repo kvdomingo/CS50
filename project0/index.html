@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+	<script src="js/jquery.js"></script>
+  	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.js"></script>
+    <script src="custom.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.css">
+    <title>My Webpage</title>
+</head>
+
+<body id="home">
+
+    <nav class="nav navbar navbar-expand-sm bg-dark navbar-dark" role="navigation">
+        <a class="navbar-brand text-light" href=#home>My Webpage</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collnav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collnav">
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link text-light" href="#home">HOME</a></li>
+                <li class="nav-item"><a class="nav-link text-muted" href=#portfolio>PORTFOLIO</a></li>
+                <li class="nav-item"><a class="nav-link text-muted" href=#about>ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link text-muted" href=#contact>CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <p class="p" id="demo"></p>
+        <script>
+            document.getElementById("demo").innerHTML = myFunc();
+        </script>
+    </div>
+
+    <div class="jumbotron" style="margin-bottom: 0">
+        <p>&copy 2019 Kenneth V. Domingo</p>
+    </div>
+
+</body>
+
+</html>
