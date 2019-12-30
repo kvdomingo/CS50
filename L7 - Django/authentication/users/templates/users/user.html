@@ -1,0 +1,9 @@
+{% extends "users/base.html" %}
+
+{% block body %}
+    <h1>Hello, {{ user.first_name }}</h1>
+    <div class="list-group">
+        <a class="list-group-item">Currently logged in as: {{ user.username }}</a>
+        <a href="{% url 'logout' %}" class="list-group-item list-group-item-action text-primary">Logout</a>
+    </ul>
+{% endblock %}
